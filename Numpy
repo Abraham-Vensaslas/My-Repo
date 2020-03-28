@@ -1,0 +1,29 @@
+3 benefits of numpy
+	Fast	
+	Less memeory
+	convinient
+
+##Less memory##
+
+import numpy as np
+import sys
+import time
+l=range(1000)
+print(sys.getsizeof(5)*len(l))
+a=np.arange(1000)
+a.itemsize * a.size
+
+##Fast##
+
+size=100000
+l1=range(size)
+l2=range(size)
+result=((x+y) for x,y in zip(l1,l2))
+start=time.time()
+print ("python took ", (time.time()-start)* 1000)
+a1=np.arange(size)
+a2=np.arange(size)
+res=a1+a2
+start=time.time()
+print ("numpy took" ,(time.time()-start)*1000)
+
