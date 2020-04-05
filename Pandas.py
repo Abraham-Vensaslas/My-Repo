@@ -1,4 +1,4 @@
--------------class1------------------
+#-------------class1------------------#
 import pandas as pd
 c=pd.openfile("path")
 c --->will print the sheet
@@ -8,7 +8,7 @@ c['Current Salary'].max()[s['Birth Date']]
 c['column name'].mean()
 c.filna(0,inplace=True)---> replace null with 0
 
-------------class2-------------------
+#------------class2-------------------#
 import pandas as pd
 c=pd.read_csv('C:\\Users\\abrahamv\\Downloads\\ER-5537\\Graph.csv')
 df=c[1:30]
