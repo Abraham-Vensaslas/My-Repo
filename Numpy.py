@@ -1,0 +1,94 @@
+3 benefits of numpy
+
+#---Less memory---#
+
+import numpy as np
+import sys
+import time
+l=range(1000)
+print(sys.getsizeof(5)*len(l))
+a=np.arange(1000)
+a.itemsize * a.size
+
+#---Fast and convinient---#
+import numpy as np
+import time
+size=1000000
+l1=range(size)
+l2=range(size)
+a1=np.arange(size)
+a2=np.arange(size)
+start=time.time()
+result=[(x+y) for x,y in zip(l1,l2)]
+print ("python took ", (time.time()-start)* 1000)
+start=time.time()
+res=a1+a2
+print ("numpy took" ,(time.time()-start)*1000)
+
+#----------------------Class-2--------------------------------#
+
+variable_name.ndim #--> print the dimension
+variable_name.itemsize #--> print the byte size of each element
+variable_name.dtype #--> data type of the array
+variable_name.size #--> size of array
+variable_name.shape #--> (row,column)
+variable_name.reshape(row,column) #--> reshape the array
+variable_name.ravel() #--> to flatten the array as a single dimension array and it can't touch the original array.
+variable_name.min()
+variable_name.max()
+variable_name.sum()
+np.ones((2,3)) #-->zeros and ones for place holder array.
+np.arange(1,5,2) #-->steps of two number, 2 is the step.
+np.linspace(1,5,10) #-->(start,stop,lineraly spaced 10 numbers)
+np.sqrt(variable_name)
+np.std(variable_name)
+a.sum(axis=0) #it will sum a rows up to down and print the single dimension array
+a.sum(axis=1) #it will sum a columns up to down and print the single dimension array
+variable_name.dot(another_variable_name) #--> to get the matrix product
+
+import numpy as np
+a=np.arange(10)
+a.ndim
+a.itemsize
+a.size
+a.dtype
+a.shape
+b=np.array([[2,4,6,8],[3,6,9,12]])
+b.shape
+b.reshape(4,2)
+c=np.zeros((2,3))
+c=np.ones((2,3))
+np.linspace(1,100,5)
+k=np.linspace(1,100,10000)
+b.sum(axis=0)
+b.sum(axis=1)
+
+
+
+#----------------------Class-3---------------------------------#
+
+variable_name[0:2]
+variable_name[-1]
+with multi dimensional array
+variable_name[1,2]
+variable_name[0:2,2] #--> [start row:end row, nth element]
+variable_name[:,1:3] #--> (all rows,start to end row)
+iterate through an array #-->for row in variable_name:
+flat and print all elements #--> for cell in variable_name.flat
+np.vstack((a,b)) #--> vertical stack two arrays.
+np.hstack((a,b)) #--> horizontal stack two arrays.
+np.hsplit(a,3) #--> horizonally spilting the array into three arrays.
+np.vsplit(a,3) #--> vertically spilting the array into three arrays.
+boolean function #-->b=a>4
+a[b] #--> only prints the true
+a[b]=-1 #--> replace elements with certain number
+
+
+#----------------------Class-4---------------------------------#
+
+for cell in a.flattern(): #--> print the flattern form of array.
+for x in np.nditer(a,orderby='C'): #--> print the array in cell order
+for x in np.nditer(a,orderby='F'): #--> print the array in fortran order one by one element
+for x in np.nditer(a,orderby='F',flags=['external loop']) #--> print the array in fortran order each set by set
+for x in np.nditer(a,op_flags=['readwrite']): /n x[..]=x*x  #--> create a squsre of array and modify the original
+for x,y in np.nditer([a,b]) #-->iterate two numpy arrays simultaneously
