@@ -84,3 +84,25 @@ dfs=pd.concat([df1,df2],axis=1) --#join the table paralell
 df1=pd.DataFrame({'city':['Mumbai','Delhi','Bangalore'],'Temperature':[25,36,21]}, index=[0,1,2])
 s=pd.Series(['23,58,89'],name='Joice') --#adding another column and values
 f=pd.concat([dfs,s],axis=1)
+
+#-----------------Class9-------------------------#
+#merge/join dataframes
+df=pd.merge(df1,df2, on=('city'))
+df=pd.merge(df1,df2, on=('city'),suffixes=('left','right'))
+df=pd.merge(df1,df2, on=('city'), how='outer')
+df=pd.merge(df1,df2, on=('city'), how='outer',indicator=False)
+
+#-----------------Class10-------------------------#
+#Pivot to reshape the data
+#Piot table is used to summarize and aggregate data inside dataframe
+df.pivot(index='columnname',columns='columnname', values='coulmnname')
+#index-->row level
+#columns-->column level
+#values --> what you want your value to be
+
+#usecase--> duplicate entries with different values(morning and evening temperature)
+	df.pivot_table(index='',columns='')
+#by using aggfunc you can apply aggregate functions also 
+	df.pivot_table(index='',columns='',aggfunc='count')
+#grouper function to aggregate based on date
+	df.pivot_table(index=pd.grouper(freq='M',key='date'), columns='')
