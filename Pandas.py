@@ -46,3 +46,16 @@ df.interpolate(method="time") --#gradual fill in missing consider with time.
 df.dropna() drop all --#the missing values
 df.dropna(how="all") --#remove only all columns having Nan.
 df.dropna(thresh=2) --#to keep the column need 2 value.
+
+#------------------Class6-----------------------#
+#how to replace missing data
+df.replace(11.0,np.NaN) --#to replace the value to another NaN
+df.replace([8.011.0],np.NaN) --#lost for multiple NaN
+#replace value based on specific column (provide a dict)
+	df.replace({'columnname':'exiting value'},'newvalue' )
+	df.replace({'existing value':'newvalue'})
+#remove the unit fo measure (use regex to identify the pattern) 
+	df.replace('[A-Za-z]','',regex=True)
+	df.replace({'Country':'[A-Za-z]'},'',regex=True) --#on a particular column
+#replace list of value witha nother list of value
+	df.replace(['list of existing value'],['new value list'])
