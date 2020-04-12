@@ -32,3 +32,17 @@ df.index
 df.set_index('Birth Date', inplace=True)
 df.loc['2/26/1949']
 df.reset_index(inplace=True)
+
+#-----------------class5-------------------------#
+#How to handle missing data.
+df=pd.read_excel("path",Parse_dates=["col name"]) --#to change the date datatype.
+df.filna(0)
+df.fillna({'columnname':0})
+df.fillna(method=ffill/bfill) --#carry forward the other column values vertically
+df.fillna(method="ffill",axis='columns') --#fill horizontally.
+df.fillna(method="ffill",limit=1) --#copy the values for missing ina limit
+df.interpolate() --#gradual fill in missing
+df.interpolate(method="time") --#gradual fill in missing consider with time.
+df.dropna() drop all --#the missing values
+df.dropna(how="all") --#remove only all columns having Nan.
+df.dropna(thresh=2) --#to keep the column need 2 value.
