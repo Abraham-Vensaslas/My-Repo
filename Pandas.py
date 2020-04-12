@@ -59,3 +59,28 @@ df.replace([8.011.0],np.NaN) --#lost for multiple NaN
 	df.replace({'Country':'[A-Za-z]'},'',regex=True) --#on a particular column
 #replace list of value witha nother list of value
 	df.replace(['list of existing value'],['new value list'])
+
+#-----------------Class7-------------------------#
+#How to group by
+
+g=df.groupby('league')
+for league,league_df in g:
+    print(" ")
+    print(league)
+    print(" ")
+    print(league_df)
+%matplotlib inline
+g.plot()
+
+#-----------------Class8-------------------------#
+#concat dataframes
+pd.concat(['1stdatframe','sec data frame'],ignore_index=True)
+df1=pd.DataFrame({'city':['Mumbai','Delhi','Bangalore'],'Temperature':[25,36,21]})
+df2=pd.DataFrame({'city':['california','Illionis','Boston'],'Temperature':[12,18,22]})
+dfs=pd.concat([df1,df2])
+dfs=pd.concat([df1,df2],keys=['India','USA']) --#create  seperate index
+dfs=pd.concat([df1,df2],ignore_index=True) --#make the autoindex to continue
+dfs=pd.concat([df1,df2],axis=1) --#join the table paralell
+df1=pd.DataFrame({'city':['Mumbai','Delhi','Bangalore'],'Temperature':[25,36,21]}, index=[0,1,2])
+s=pd.Series(['23,58,89'],name='Joice') --#adding another column and values
+f=pd.concat([dfs,s],axis=1)
