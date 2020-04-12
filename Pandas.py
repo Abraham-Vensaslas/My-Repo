@@ -133,5 +133,10 @@ margins=True --> to knoe the sum
 normalize='Index' --> The percentage of individual value.
 
 #----------------Time Series Analysis ----------------#
-
+#dataindex
+df=pd.read_csv('C:/Users/abrahamv/Downloads/AAPL.csv',parse_dates=['Date'],index_col=['Date'])
+Ap=df["2019-04"] --# to view the data only April 2019
+df['Close'].resample('Q').mean().plot(kind='bar')
+#resample is used to specify the range as daily/monthly/quarterly
+#plot will draw the chart by usign matplotlib and kind we can change the type of it.
 
