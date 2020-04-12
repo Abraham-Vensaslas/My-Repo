@@ -106,3 +106,32 @@ df.pivot(index='columnname',columns='columnname', values='coulmnname')
 	df.pivot_table(index='',columns='',aggfunc='count')
 #grouper function to aggregate based on date
 	df.pivot_table(index=pd.grouper(freq='M',key='date'), columns='')
+
+#-----------------Class11-------------------------#
+#reshape dataframe by using melt
+pd.melt(df,id_vars=['column name'])
+--#1st argument is dataframe
+--#2nd argument is id variable(what you want ton your x axis)
+
+#change the column name of the dataframe
+pd.melt(df,id_vars=['column name'],columnname_name='what to change')
+
+#-----------------Class12-------------------------#
+#Reshaping by using stack for multiple headers
+df.stack() --#take the inner most header.
+df.stack(level=0/1/2) --# based on the header level
+df.stack(level=0)
+df_stacked.unstack() --#to unstack the stacked values
+#we can also usev dropna to drop the values.
+
+#-----------------Class13-------------------------#
+#crosstab func to many small referenec table
+
+pd.crosstab(df['columnname'],df['columnname'])
+pd.crosstab(df['league'],df['Team Name'], values=df['Goals and assists'], aggfunc=np.average)-->use the aggregate functions withit.
+margins=True --> to knoe the sum
+normalize='Index' --> The percentage of individual value.
+
+#----------------Time Series Analysis ----------------#
+
+
