@@ -1,10 +1,3 @@
-##########################################
-#   Developed by    :    Ravi/Ashish	 #
-#   Verified by     :    MageshBabu      #
-#   JIRA Ticket ID  :    ER-3616         #
-#   Deployed on     :    2019-01-16      #
-##########################################
-
 import sys, os
 import datetime
 import MySQLdb
