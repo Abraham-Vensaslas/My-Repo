@@ -1,6 +1,6 @@
 valid_attachments = (".xyz")
 l=[]
-path=["D:/"]
+path=["D:/","E:/"]
 
 for i in path:
     f = os.listdir(str(i))
