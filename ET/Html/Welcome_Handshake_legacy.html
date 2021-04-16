@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Untitled Document</title>
+      <style>
+         .page {
+			page-break-after: always;
+         }
+         body {
+			 margin: 15cm;
+			 padding: 30cm;
+			 font-family: Arial !important;
+			 font-size:14px;
+			 line-height:14px;
+         }
+      </style>
+   </head>
+   <body style="margin: 0; padding: 0; font-family: Arial !important; font-size:14px; line-height:14px; color: #000;">
+      <div align="center" style="display:block; margin: 0 16%;">
+         <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+            <tbody>
+               <tr>
+                  <td height="50">&nbsp;</td>
+               </tr>
+               <tr>
+                  <td>
+                     <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tbody>
+                           <tr>
+                              <td width="15%"><img src="{{Creditor_Logo}}" alt="Current Creditor Logo" width="200" /></td>
+							  <td width="15%"><img src="{{Header_Logo_Image}}" alt="Header_Logo_Image" width="200" /></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </td>
+               </tr>
+               <tr>
+                  <td height="50">&nbsp;</td>
+               </tr>
+               <tr>
+                  <td style="font-family: 'Arial'; font-size: 11px; line-height:14px; color: #000;">{{Borrower_Full_Name}}<br>{{Borrower_Street_Address}}<br>
+                     {{Borrower_City}}, {{Borrower_State}}{{Borrower_ZIP}} 
+                  </td>
+               </tr>
+               <tr>
+                  <td>&nbsp;</td>
+               </tr>
+               <tr>
+                  <td style="font-size: 11px; line-height:14px; color: #000;"> {{Date_of_Email/Letter}}</td>
+               </tr><tr>
+                  <td>&nbsp;</td>
+               </tr>
+               <tr>
+                  <td style="font-size: 11px; line-height:14px; color: #000;"> Re: {{Current_Creditor}} Loan<br>
+                    Loan Number: xxxxxxxxxx{{Last_4_digits_ADF_Loan_ID}}
+                 </td>
+                  <tr>
+                  <td>&nbsp;</td>
+               </tr>
+               <tr>
+                  <td style="font-size: 11px; line-height:14px; color: #000;"> Dear {{Borrower_First_Name}},</td>
+               </tr>
+               </tr>
+               <tr>
+                  <td>&nbsp;</td>
+               </tr>
+               <tr>
+                  <td style="font-size: 11px; line-height:14px; color: #000; text-align: justify;">Please be advised that your loan will be placed with {{Future_Servicer}} for
+servcing.</td>
+               </tr>
+               <tr>
+                  <td>&nbsp;</td>
+               </tr>
+               <tr>
+                  <td style="font-size: 11px; line-height:14px; color: #000; text-align: justify;"><b>No further action is required at this time.</b> Access to the borrower portal remains the same. Your current loan status will not be affected by this transfer. All information about your loan will be transitioned to the new loan servicer, including payment schedule, payment amount, bank account, borrower assistance/payoff program, etc.</td>
+               </tr>
+             
+               <tr>
+                  <td>&nbsp;</td>
+               </tr>
+               <tr>
+                  <td style="font-size: 11px; line-height:14px; color: #000; text-align: justify;">All future communication about your loan will be from {{Future_Servicer}}.</td>
+               </tr>
+                <tr>
+                  <td>&nbsp;</td>
+               </tr>
+               <tr>
+                  <td style="font-size: 11px; line-height:14px; color: #000;">Thank you for choosing {{Original_Creditor}} for your lending needs.
+                  </td>
+               </tr>
+               <tr>
+                  <td>&nbsp;</td>
+               </tr>
+               <tr>
+                 <td style="font-size: 11px; line-height:14px; color: #000; text-align: justify;"><b> Privacy Notice:</b>Federal law requires us to tell you how we collect, share, and protect your personal information. You may review our policy and practices with respect to your personal information via the
+attached privacy notice or at {{Original_Creditor_Privacy_Notice_URL}}. In order to view, navigate and print PDF documents, you'll need Adobe Acrobat Reader software. If you don't already have it, you can download it free at <u>https://get.adobe.com/reader</u>. Alternatively, we will mail you a free copy of the privacy notice if you call us at {{Cur_Serv_Phone_Nbr}}.</td>
+               </tr>
+               <tr>
+                  <td height="20">&nbsp;</td>
+               </tr>
+               <tr>
+                  <td style="border-top:2px solid #000;">&nbsp;</td>
+               </tr>
+               <tr>
+                  <td style="font-size: 11px; line-height:14px; text-align: center; color: #000;">
+				  {{Cur_Serv_Mail_St_Add}} {{Cur_Serv_Mail_Cty}} {{Cur_Serv_Mail_St}} {{Cur_Serv_Mail_ZIP}}<br>
+                    {{Cur_Serv_Main_Email_Add}}  Phone: {{Cur_Serv_Phone_Nbr}} Fax: {{Cur_Serv_Fax_Nbr}}<br>
+					{{Cur_Serv_Work_Week}}, {{Week_Start_Time}} AM to {{Week_End_Time}} PM CT<br>
+                     {{Cur_Serv_Work_Day}}, {{Day_Start_Time}} AM to {{Day_End_Time}} PM CT<br>
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+   </body>
+</html>

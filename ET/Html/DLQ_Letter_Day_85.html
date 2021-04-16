@@ -1,0 +1,181 @@
+<!doctype html>
+<html>
+   <head>
+      <title></title>
+      <style>
+         body {
+         width: 8.5in;
+         height: 10.5in;
+         margin: 0;
+         padding: 0;
+         font:normal 11px Arial, Helvetica, sans-serif;
+         }
+         .wrapper {
+         position: absolute;
+         top: 1.00in;
+         }
+         .page {
+         page-break-after: always;
+         }
+         p {
+         font:normal 11px Arial, Helvetica, sans-serif;
+         margin-left: 0.1in;
+         margin-right: 0.67in;
+         }
+         table {
+         font:normal 11px Arial, Helvetica, sans-serif;
+         margin-left: 0.2in;
+         margin-right: 0.67in;
+         }
+         .page-content {
+         position: absolute;        
+         width: 7in;
+         height: 10in;
+         margin-left: 0.67in;
+         margin-right: 0.67in;
+         top: 0.1875in;
+         }
+         .brand {
+         position: absolute;
+         left: 0;
+         }
+         .brand span {
+         display: inline-block;
+         line-height:25px;
+         }
+         .text-link {
+         color:#0da98a;
+         text-decoration:none;
+         }
+         .text-link:hover {
+         text-decoration:underline;
+         }
+      </style>
+   </head>
+   <body>
+      <div class="page">
+         <div class="page-content">
+            <div class="brand"><img src="{{Current_Servicer_Logo}}" alt="Personify Financial" width="160" /> </div>
+            <div class="wrapper">
+               <p>{{Borrower_Full_Name}}</p>
+               <p>{{Borrower_Street_Address}}</p>
+               <p>{{Borrower_City}},&ensp;{{Borrower_State}}{{Borrower_ZIP}}</p><br>
+               <p>{{Date_of_Email/Letter}}</p><br>
+               <table width="600" border="0" cellspacing="0" cellpadding="0" style="margin-left:10px;">
+                  <tbody>
+                     <tr>
+                        <td valign="top" style="padding:0 0 0 0; font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:normal; line-height:15px; text-align:left;">
+						Re:&nbsp;{{Borrower_Full_Name}}</td>
+                        <td valign="top" style="padding:0 0 0 0; font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:normal; line-height:15px; text-align:left;">Original Creditor&ensp;&ensp;&ensp;{{Original_Creditor}}</td>
+
+                     </tr>
+                     <tr>
+                        <td valign="top" style="padding:0 0 0 0; font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:normal; line-height:15px; text-align:left;">
+Loan Number:&nbsp;XXXXXXXXXX{{Last_4_digits_ADF_Loan_ID}}</td>
+                        <td valign="top" style="padding:0 0 0 -0; font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:normal; line-height:15px; text-align:left;">Current Creditor&ensp;&ensp;&ensp;{{Current_Creditor}}</td>
+              
+                     </tr>
+                     <tr>
+                        <td valign="top" style="padding:0 0 0 0; font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:normal; line-height:15px; text-align:left;">Current Balance:&nbsp;${{Today’s_Payoff}}<sup>*</sup>
+</td>
+                        <td valign="top" style="padding:0 0 0 0; font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:normal; line-height:15px; text-align:left;">Current Servicer&ensp;&ensp;&ensp;{{Current_Servicer}}</td>
+              
+                     </tr>
+
+                  </tbody>
+               </table>
+               <p>Dear {{Borrower_First_Name}},<br><br>
+                  We have not received payment for your past due amount of ${{Delinquent_Amount}}. It is your contractual
+responsibility to make suitable payment arrangements. If you fail to bring your account current, collection
+activity will continue.
+               </p>
+               <table width="500" border="0" cellspacing="0" cellpadding="0" style="margin-left:10px;">
+                  <tbody>
+                     <tr>
+                        <td valign="top" style=" font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:normal; line-height:15px; text-align:left;">Past Due Amount</td>
+                        <td valign="top" style=" font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:normal; line-height:15px; text-align:left;">${{Delinquent_Amount}}</td>
+
+                     </tr>
+                     <tr>
+                        <td valign="top" style=" font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:normal; line-height:15px; text-align:left;">Current Amount Due</td>
+                        <td valign="top" style=" font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:normal; line-height:15px; text-align:left;">${{Current_Payment_Amount}}</td>
+              
+                     </tr>
+                     <tr>
+                        <td valign="top" style=" font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:normal; line-height:15px; text-align:left;">TOTAL AMOUNT DUE
+</td>
+                        <td valign="top" style=" font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:normal; line-height:15px; text-align:left;">${{Sum_of_Delinquent_Amount_+_Current_Payment_Amount}}</td>
+              
+                     </tr>
+					  <tr>
+                        <td valign="top" style=" font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:normal; line-height:15px; text-align:left;">Unpaid Fees
+</td>
+                        <td valign="top" style=" font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:normal; line-height:15px; text-align:left;">$${Fees_Remaining}<sup>*</sup><sup>*</sup></td>
+              
+                     </tr>
+					  <tr>
+                        <td valign="top" style=" font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:normal; line-height:15px; text-align:left;">Past Due Since</td>
+                        <td valign="top" style=" font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:normal; line-height:15px; text-align:left;">{{Oldest_Unpaid_Due_Date}}</td>
+              
+                     </tr>
+
+                  </tbody>
+               </table><p>Please contact Personify Financial immediately at {{Collections_Phone_Number}}.</p>
+               <p>Information about your loan is available online at {{BP_URL}}. Log onto our Secure Borrower Portal to make
+an online payment, or view your transaction history, loan documents, loan details, and other valuable information.
+               </p>
+			   <p>If payment of the overdue balance has already been made, please disregard this letter.
+			   </p>
+               <p>Sincerely,<br>{{Current_Servicer}}</p>
+			   <p><sup>*</sup>{{Payoff_Disclosure}}</p>
+			   <p><sup>*</sup><sup>*</sup>{{Unpaid_Fees_Disclosure}}</p>
+			   <p>{{Dispute_Disclosure}}</p>
+			   <p>{{Mini_Miranda}}</p>
+			   <p style="text-align: center;">{{State_Disclosure_Header}}</p>
+			   <p>{{State_Disclosure}}</p>
+			   <p>{{NMLS_ID}}</p>
+			   <p style="text-align: center;">Important Contact Information</p>
+			     <table align="center" border="0" cellspacing="0" cellpadding="0" class="devicewidth" style="margin:auto; border:1px solid;">
+                  <tbody>
+                     <tr>
+                        <td valign="top" style=" border-right:1px solid;border-bottom:1px solid; padding:5px 5px 5px 5px; font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:normal; line-height:20px; text-align:left;">Company Name:</td>
+                        <td valign="top" style="border-bottom:1px solid; padding:5px 5px 5px 5px; font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:normal; line-height:20px; text-align:left;">{{Current_Servicer}}</td>
+
+                     </tr>
+                     <tr>
+                        <td valign="top" style="border-right:1px solid;border-bottom:1px solid;padding:5px 5px 5px 5px; font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:normal; line-height:20px; text-align:left;">Send Payments, Disputes, Inquiries to:</td>
+                        <td valign="top" style="border-bottom:1px solid;padding:5px 5px 5px 5px; font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:normal; line-height:20px; text-align:left;">{{Current_Servicer}} {{Cur_Serv_Mail_St_Add}}<br>{{Cur_Serv_Mail_Cty}}, {{Cur_Serv_Mail_St}} {{Cur_Serv_Mail_ZIP}}</td>
+              
+                     </tr>
+                     <tr>
+                        <td valign="top" style="border-right:1px solid;border-bottom:1px solid;padding:5px 5px 5px 5px; font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:normal; line-height:20px; text-align:left;">Physical Address
+</td>
+                        <td valign="top" style="border-bottom:1px solid;padding:5px 5px 5px 5px; font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:normal; line-height:20px; text-align:left;">{{Cur_Serv_Phys_St_Add}}<br>{{Cur_Serv_Phys_Cty}}, {{Cur_Serv_Phys_St}}{{Cur_Serv_Phys_ZIP}}<br> Phone:&nbsp;{{Cur_Serv_Phone_Nbr}}<br>Fax:&nbsp;{{Cur_Serv_Fax_Nbr}}</td>
+              
+                     </tr>
+					  <tr>
+                        <td valign="top" style="border-right:1px solid;border-bottom:1px solid;padding:5px 5px 5px 5px; font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:normal; line-height:20px; text-align:left;">Email General inquiries:</td>
+                        <td valign="top" style="border-bottom:1px solid;padding:5px 5px 5px 5px; font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:normal; line-height:20px; text-align:left;">{{Cur_Serv_Main_Email_Add}}</td>
+              
+                     </tr>
+					 					  <tr>
+                        <td valign="top" style="border-right:1px solid;padding:5px 5px 5px 5px;font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:normal; line-height:20px; text-align:left;">Email Disputes:</td>
+                        <td valign="top" style="padding:5px 5px 5px 5px; font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:normal; line-height:20px; text-align:left;">{{Cur_Serv_Disp_Email_Add}}</td>
+              
+                     </tr>
+
+                  </tbody>
+               </table>
+			   
+
+			   
+              <br> <p style="border-top:2px solid #000;">&nbsp</p>
+               <p style="text-align: center;"> {{Cur_Serv_Mail_St_Add}} {{Cur_Serv_Mail_Cty}} {{Cur_Serv_Mail_St}} {{Cur_Serv_Mail_ZIP}}<br>
+                    {{Cur_Serv_Main_Email_Add}}&nbsp;&nbsp;&nbsp;&nbsp;Phone: {{Cur_Serv_Phone_Nbr}}&nbsp;&nbsp;&nbsp;&nbsp;Fax: {{Cur_Serv_Fax_Nbr}}<br>
+					{{Cur_Serv_Work_Week}}, {{Week_Start_Time}} AM to {{Week_End_Time}} PM CT<br>
+                     {{Cur_Serv_Work_Day}}, {{Day_Start_Time}} AM to {{Day_End_Time}} PM CT<br> </p>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
