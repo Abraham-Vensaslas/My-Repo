@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+   <head>
+      <title></title>
+      <style>
+         body {
+         width: 8.5in;
+         height: 10.5in;
+         margin: 0;
+         padding: 0;
+         font:normal 13px/20px Arial, Helvetica, sans-serif;
+         }
+         .wrapper {
+         position: absolute;
+         top: 1.00in;
+         }
+         .page {
+         page-break-after: always;
+         }
+         p {
+         font:normal 15px/20px Arial, Helvetica, sans-serif;
+         margin-left: 0.1in;
+         margin-right: 0.67in;
+         }
+         table {
+         font:normal 15px/20px Arial, Helvetica, sans-serif;
+         margin-left: 0.2in;
+         margin-right: 0.67in;
+         }
+         .page-content {
+         position: absolute;        
+         width: 7in;
+         height: 10in;
+         margin-left: 0.67in;
+         margin-right: 0.67in;
+         top: 0.1875in;
+         }
+         .brand {
+         position: absolute;
+         left: 0;
+         }
+         .brand span {
+         display: inline-block;
+         line-height:18px;
+         }
+         .text-link {
+         color:#0da98a;
+         text-decoration:none;
+         }
+         .text-link:hover {
+         text-decoration:underline;
+         }
+      </style>
+   </head>
+   <body>
+      <div class="page">
+         <div class="page-content">
+            <div class="brand"><img src="https://www.personifyfinancial.com/img/personifymailer_logo.png" alt="Personify Financial" width="160" /> </div>
+            <div class="wrapper">
+               <p style="font-weight:bold; font-style: italic;">Customer Inquiries: (888) 364-1609</p>
+               <p>{{CURDATE}}</p>
+               <table width="800" border="0" cellspacing="0" cellpadding="0" style="margin-left:10px;">
+                  <tbody>
+                     <tr>
+                        <td valign="top" style="padding:0 0 5px 20px; font-family:Arial, Helvetica, sans-serif; font-size:15px; font-weight:normal; line-height:20px; text-align:left;">{{FULLNAME}}</td>
+                        <td valign="top" style="padding:0 0 5px 0; font-family:Arial, Helvetica, sans-serif; font-size:15px; font-weight:normal; line-height:20px; text-align:left;">Past Due Since</td>
+                        <td valign="top" style="padding:0 0 5px 0; font-family:Arial, Helvetica, sans-serif; font-size:15px; font-weight:normal; line-height:20px; text-align:left;">{{PASTDUESINCE}}</td>
+                     </tr>
+                     <tr>
+                        <td valign="top" style="padding:0 0 5px 20px; font-family:Arial, Helvetica, sans-serif; font-size:15px; font-weight:normal; line-height:20px; text-align:left;">{{ADDRESS1}}</td>
+                        <td valign="top" style="padding:0 0 5px 0; font-family:Arial, Helvetica, sans-serif; font-size:15px; font-weight:normal; line-height:20px; text-align:left;">Past Due Amount</td>
+                        <td valign="top" style="padding:0 0 5px 0; font-family:Arial, Helvetica, sans-serif; font-size:15px; font-weight:normal; line-height:20px; text-align:left;">${{PASTDUE}}</td>
+                     </tr>
+                     <tr>
+                        <td valign="top" style="padding:0 0 5px 20px; font-family:Arial, Helvetica, sans-serif; font-size:15px; font-weight:normal; line-height:20px; text-align:left;">{{ADDRESS2}}</td>
+                        <td valign="top" style="padding:0 0 5px 0; font-family:Arial, Helvetica, sans-serif; font-size:15px; font-weight:normal; line-height:20px; text-align:left;">Unpaid Fees</td>
+                        <td valign="top" style="padding:0 0 5px 0; font-family:Arial, Helvetica, sans-serif; font-size:15px; font-weight:normal; line-height:20px; text-align:left;">${{UNPAIDFEES}}</td>
+                     </tr>
+                     <tr>
+                        <td valign="top" style="padding:0 0 5px 0; font-family:Arial, Helvetica, sans-serif; font-size:15px; font-weight:normal; line-height:20px; text-align:left;">Loan Number: {{LOANID}}</td>
+                        <td valign="top" style="padding:0 0 5px 0; font-family:Arial, Helvetica, sans-serif; font-size:15px; font-weight:normal; line-height:20px; text-align:left;"><b>TOTAL AMOUNT DUE</b></td>
+                        <td  valign="top" style="padding:0 0 5px 0; font-family:Arial, Helvetica, sans-serif; font-size:15px; font-weight:normal; line-height:20px; text-align:left;"><b>${{TOTALDUE}}</b></td>
+                     </tr>
+                  </tbody>
+               </table>
+               <p><b><em>Action Needed: Contact Personify Financial.</b></em> 
+               </p>
+               <p>We are writing to inform you that we have made several attempts to contact you by telephone and email, yet your account remains overdue as of the date of this notice in the amount of<b> ${{TOTALDUE}}.</b> Interest may continue to accrue on your account pursuant to your loan agreement terms.</p>
+               <p>Your payment has been overdue since {{PASTDUESINCE}}.</p>
+               <p>Please contact Personify Financial immediately to clear the overdue balance or mail a payment to:</p>
+               <p style="text-align: center;"><b>(888) 364-1609</b><br>
+                  <b>Monday - Saturday - 8:00 am to 9:00 pm, Sunday - 8:00 am to 7:00 pm CT</b>
+               </p>
+               <p style="text-align: center;"><b>Personify Financial<br>PO BOX 208417<br>Dallas, TX 75320-8417</b></p>
+               <p style="text-align: center;">(OR)</p>
+               <p> Make an online payment at <b>https://www.personifyfinancial.com/account/login/</b>; you can also view your transaction history, loan documents, loan details and other valuable information through our secure online portal.</p>
+               <p>If payment of the overdue balance has already been made, please disregard this letter.</p>
+               <p>Sincerely,<br>Personify Financial</p>
+               <p style="border-top:1px solid #000;">&nbsp</p>
+               <p style="text-align: center;">The purpose of this notice is to collect a debt and any information obtained will be used for that purpose.<br>Calls to or from Personify Financial may be monitored or recorded for quality assurance.
+               </p>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>

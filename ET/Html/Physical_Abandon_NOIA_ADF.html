@@ -1,0 +1,111 @@
+<html>
+   <head>
+      <title></title>
+      <style>
+         body {
+         width: 8.5in;
+         height: 10.5in;
+         margin: 0;
+         padding: 0;
+         font:normal 13px/20px Arial, Helvetica, sans-serif;
+         }
+         .wrapper {
+         position: absolute;
+         top: 0.35in;
+         }
+         .page {
+         page-break-after: always;
+         }
+         p {
+         font:normal 15px/20px Arial, Helvetica, sans-serif;
+         margin-left: 0.1in;
+         margin-right: 0.67in;
+         }
+         table {
+         font:normal 15px/20px Arial, Helvetica, sans-serif;
+         margin-left: 0.2in;
+         margin-right: 0.67in;
+         }
+         .page-content {
+         position: absolute;
+         width: 7in;
+         height: 9in;
+         margin-left: 0.67in;
+         margin-right: 0.67in;
+         top: 0.1875in;
+         }
+         .brand {
+         position: absolute;
+         left: 0;
+		 width:15px;
+		 height:15px;
+         }
+         .brand span {
+         display: inline-block;
+         line-height:16px;
+         }
+         .text-link {
+         color:#0da98a;
+         text-decoration:none;
+         }
+         .text-link:hover {
+         text-decoration:underline;
+         }
+      </style>
+   </head>
+   <body>
+      <div class="page">
+         <div class="page-content">
+            <div class="brand"><img src="https://www.personifyfinancial.com/img/personifymailer_logo.png" alt="Personify Financial" width="160" /></div>
+            <div class="wrapper">
+               <p style="line-height:16px;font-size:12px">{{CURDATE}}</p>
+               <p style="line-height:16px;font-size:12px">{{FULLNAME}}<br>{{ADDRESS1}}<br>{{ADDRESS2}}</p>
+               <p style="text-align: justify; font-size:14px"><b>Re: Your Personify Loan Application - More Information is Needed</b>
+               </p>
+               <p style="text-align: justify;font-size:12px">Dear {{FULLNAME}},</p>
+               <p style="text-align: justify;font-size:12px">Our records indicate that you recently started an application for a loan with Personify Financial.
+               </p>
+               <p style="text-align: justify;font-size:12px">The detail that has been submitted by you to date is insufficient for us to render a credit decision on your loan application. For us to be able
+                  to accurately assess your creditworthiness, you must submit all of the following information: 
+               </p>
+               <p style="padding-left: 0.7in;font-size:12px">Your full name<br />
+                  Your email address<br />
+                  Your pre-qualification code, if applicable<br />
+                  Your full address and zip code<br />
+                  Your residence type<br />
+                  Your primary phone<br />
+                  How much do you want to borrow<br />
+                  How will you be using your loan<br />
+                  Your monthly income after taxes<br />
+                  Your source of income<br />
+                  Your employer information<br />
+                  Your frequency of income and next income date<br />
+                  Your bank account and routing number<br />
+                  Your repayment choice via ACH or RCC<br />
+               </p>
+               <p style="text-align: justify;font-size:12px">Copy and paste the link into the browser to complete your Personify Financial application and see what loans you may qualify for:<br />
+                  <a href="" style="text-decoration:underline; color: #00ac9f;">{{URL}}</a>
+               </p>
+               <p style="text-align: justify;font-size:12px">We need to receive this information by {{OFFEREXPIRYDATE}}, to give further consideration to your credit request.
+               </p>
+               <p style="text-align: justify;font-size:12px">Have questions? To ensure we deliver the highest quality of service, please either reply to this mail or give us a call. Thank you
+                  for considering Personify Financial and we look forward to serving you.
+               </p>
+               <p style="text-align: justify;font-size:12px">Sincerely,<br>
+                  Personify Financial
+               </p>
+               <p style="border-top:1px solid #000;text-align: center;font-size:10px">
+                  <tr>
+               <p style="text-align: center;font-size:12px"><b>Personify Financial</b><br>
+               Phone: (888) 578-9546<br>
+               Fax: (646) 736-0945<br>
+               Monday - Saturday - 8:00 am to 9:00 pm CT<br>
+               Sunday - 8:00 am to 7:00 pm CT<br>
+               Email:
+               <a href="mailto:contact@personifyfinancial.com" style="text-decoration:underline; color: #00ac9f;">contact@personifyfinancial.com</a>
+               </p>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>

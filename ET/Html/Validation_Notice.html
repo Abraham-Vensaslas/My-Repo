@@ -1,0 +1,532 @@
+<!doctype html>
+<html>
+<head>
+<title></title>
+<style>
+body {
+        width: 8.5in;
+        height: 10.5in;
+        margin: 0;
+
+
+        padding: 0;
+        font:normal 13px/20px Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+        position: absolute;
+        top: 1.00in;
+}
+.page {
+        page-break-after: always;
+}
+p {
+
+font:normal 15px/20px Arial, Helvetica, sans-serif;
+margin-left: 0.1in;
+margin-right: 0.67in;
+
+}
+
+
+.page-content {
+        position: absolute;
+        width: 7in;
+        height: 10in;
+        margin-left: 0.67in;
+        margin-right: 0.67in;
+        top: 0.1875in;
+}
+.brand {
+        position: absolute;
+        left: 0;
+}
+.brand span {
+        display: inline-block;
+        line-height:18px;
+}
+
+.text-link {
+        color:#0da98a;
+        text-decoration:none;
+}
+.text-link:hover {
+        text-decoration:underline;
+}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="page-content">
+    <div class="brand"><img src="{{Current_Creditor_Logo}}" alt="Personify Financial" width="160" /> </div>
+    <div class="wrapper">
+<tr>
+    <td width="100%" valign="top" bgcolor="#ffffff"><table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tbody>
+          <tr>
+            <td bgcolor="#ffffff" style="text-align:left;"><table width="700" cellpadding="0" cellspacing="0" border="0" align="left" class="devicewidth">
+                <tbody>
+                  <tr>
+                    <td style="text-align:left;"><table align="left" width="660" border="0" cellspacing="0" cellpadding="0" class="devicewidthinner">
+                        <tbody>
+
+                       <tr>
+                        <td valign="top" style="padding:0 0 0 0; font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:normal; line-height:18px; text-align:left;"></td>
+                        <td valign="top" style="padding:0 0 0 0; font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:normal; line-height:18px; text-align:left;">Original Creditor&ensp;&ensp;&ensp;{{Original_Creditor}}</td>
+
+                     </tr>
+                     <tr>
+                        <td valign="top" style="padding:0 0 0 0; font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:normal; line-height:18px; text-align:left;"></td>
+                        <td valign="top" style="padding:0 0 0 -0; font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:normal; line-height:18px; text-align:left;">Original Account No.&ensp;&ensp;&ensp;xxxxxxxxxx{{Last_4_digits_ADF_Loan_ID}}</td>
+              
+                     </tr>
+                     <tr>
+                        <td valign="top" style="padding:0 0 0 0; font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:normal; line-height:18px; text-align:left;">{{Borrower_Full_Name}}
+</td>
+                        <td valign="top" style="padding:0 0 0 0; font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:normal; line-height:18px; text-align:left;">Current Creditor&ensp;&ensp;&ensp;{{Current_Creditor}}</td>
+              
+                     </tr>
+                     <tr>
+                        <td valign="top" style="padding:0 0 0 0; font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:normal; line-height:18px; text-align:left;">
+      {{Borrower Street Address}}</td>
+                        <td valign="top" style="padding:0 0 0 0; font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:normal; line-height:18px; text-align:left;">Current Servicer&ensp;&ensp;&ensp;{{Current_Servicer}}</td>
+
+                     </tr>
+                     <tr>
+                        <td valign="top" style="padding:0 0 0 0; font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:normal; line-height:18px; text-align:left;">
+{{Borrower_City}}, {{Borrower_State}} {{Borrower_ZIP}}</td>
+                        <td valign="top" style="padding:0 0 0 -0; font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:normal; line-height:18px; text-align:left;">Servicer Account No.&ensp;&ensp;&ensp;xxxxxxxxxx{{Last_4_digits_ADF_Loan_ID}}</td>
+              
+                     </tr>
+                     <tr>
+                        <td valign="top" style="padding:0 0 0 0; font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:normal; line-height:15px; text-align:left;">
+</td>
+                        <td valign="top" style="padding:0 0 0 0; font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:normal; line-height:18px; text-align:left;">Interest Rate&ensp;&ensp;&ensp;{{Current_Interest_Rate}}%</td>
+              
+                     </tr><tr>
+                        <td valign="top" style="padding:0 0 0 0; font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:normal; line-height:18px; text-align:left;">Dear {{Borrower_First_Name}},
+</td>
+                        <td valign="top" style="padding:0 0 0 0; font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:normal; line-height:18px; text-align:left;">Current Balance&ensp;&ensp;&ensp;${{Todays_Payoff}}*</td>
+              
+                     </tr>
+                          
+                          <tr>
+                            <td height="15" style="font-size:1px; line-height:1px; mso-line-height-rule:exactly;"></td>
+                          </tr>
+                         
+                        </tbody>
+                      </table></td>
+                  </tr>
+                   <tr>
+                            <td style="font-family:Arial, Helvetica, sans-serif; font-size:11px; line-height:20px; text-align:left;">Welcome to {{Current_Servicer}}. We are happy to help service your loan and answer any questions you may have about
+your account. Under certain circumstances, we may be considered a debt collector, so we are providing you a list of rights
+that may be available to you, including your right to dispute the debt.</td>
+                          </tr>
+                  
+                  
+               <table width="355" border="0" cellspacing="0" cellpadding="0" >
+                  <tbody>
+      <tr>
+                        <td valign="top" style=" font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:normal; line-height:15px; text-align:left; border-bottom:2px solid; font-weight:bold;">Our Information Shows as of {{Current_Date}}:</td>
+      </tr>
+      </tbody></table><br>
+
+
+
+               <table width="355" border="0" cellspacing="0" cellpadding="0" >
+                  <tbody>
+
+                     <tr>
+                        <td valign="top" style=" font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:normal; line-height:15px; text-align:left; border-bottom:1px solid;">Loan Amount</td>
+      <td valign="top" style=" font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:normal; line-height:15px; text-align:left; border-bottom:1px solid;">${{Loan_Amount}}</td>
+                       
+
+                     </tr>
+                     <tr>
+                        <td valign="top" style=" font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:normal; line-height:15px; text-align:left;border-bottom:1px solid;">&ensp;&ensp;&ensp;&ensp;Interest Charged
+</td>
+ <td valign="top" style=" font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:normal; line-height:15px; text-align:left;border-bottom:1px solid;">${{Total_Interest_Charged}}
+</td>
+      
+              
+                     </tr>
+                     <tr>
+                        <td valign="top" style=" font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:normal; line-height:15px; text-align:left;border-bottom:1px solid;">&ensp;&ensp;&ensp;&ensp;Fees/Cost/Expenses
+</td><td valign="top" style=" font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:normal; line-height:15px; text-align:left;border-bottom:1px solid;">${{Total_Fees_Charged}}
+</td>
+       
+              
+                     </tr>
+       <tr>
+                        <td valign="top" style=" font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:normal; line-height:15px; text-align:left;border-bottom:1px solid;">Total Amount Paid/Credited</td>                      <td valign="top" style=" font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:normal; line-height:15px; text-align:left;border-bottom:1px solid;">${{Total_Amount_Paid}}</td>
+
+              
+                     </tr>
+       <tr>
+                        <td valign="top" style=" font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:normal; line-height:15px; text-align:left;border-bottom:1px solid;">Total Amount Due</td>
+             <td valign="top" style=" font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:normal; line-height:15px; text-align:left;border-bottom:1px solid;">${{Todays_Payoff}}</td>
+              
+                     </tr>
+
+                  </tbody>
+               </table><br>
+
+                  
+                  
+                  
+                  
+                                 <table width="355" border="0" cellspacing="0" cellpadding="0" >
+                  <tbody>
+      <tr>
+                        <td valign="top" style=" font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:normal; line-height:15px; text-align:left; border-bottom:2px solid; font-weight:bold;">How can you dispute the debt?</td>
+      </tr>
+      </tbody></table>
+
+
+ <tr>
+                            <td style="font-family:Arial, Helvetica, sans-serif; font-size:11px; line-height:18px; text-align:left;"><ul><li>Call or write to us by {Dispute Deadline} to dispute all or part of the debt. If you do not, we will assume that our
+information is correct.</li><li>
+If you write to us by {{Dispute_Deadline}}, we must stop collection on any amount you dispute until we send you
+information that shows you owe this debt. You may use the attached form or write to us without the form. You may also
+include supporting documents. We accept disputes electronically at {{Dispute_URL}}</li></ul></td>
+                          </tr><tr>
+                                            <td height="15" style="font-size:1px; line-height:1px; mso-line-height-rule:exactly;"></td>
+                                          </tr>
+                  <table width="355" border="0" cellspacing="0" cellpadding="0" >
+                  <tbody>
+      <tr>
+                        <td valign="top" style=" font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:normal; line-height:15px; text-align:left; border-bottom:2px solid; font-weight:bold;">What else can you do?</td>
+      </tr>
+      </tbody></table> 
+                  
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0" >
+                  <tbody>
+                  
+                  <tr>
+                            <td style="font-family:Arial, Helvetica, sans-serif; font-size:11px; line-height:18px; text-align:left;">
+                              <b>Write to ask for the name and address of the origi nal creditor, if different from the current creditor.</b> If you write by
+{{Dispute_Deadline}}, we must stop collection until we send you that information. You may use the form below or write to us
+without the form. We accept such request electronically at {{Dispute_URL}}.</td>
+                          </tr><tr>
+                                            <td height="15" style="font-size:1px; line-height:1px; mso-line-height-rule:exactly;"></td>
+                                          </tr>
+                  </tbody></table>
+                  
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0" >
+                  <tbody>
+                  
+                  <tr>
+                            <td style="font-family:Arial, Helvetica, sans-serif; font-size:11px; line-height:18px; text-align:left;">
+                              <b>Go to <u>www.cfpb.gov/debt-collection</u> to learn more about your rights under federal law.</b> For instance, you have the
+right to stop or limit how we can contact you.</td>
+                          </tr><tr>
+                                            <td height="15" style="font-size:1px; line-height:1px; mso-line-height-rule:exactly;"></td>
+                                          </tr>
+                  </tbody></table>
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0" >
+                  <tbody>
+                  
+                  <tr>
+                            <td style="font-family:Arial, Helvetica, sans-serif; font-size:11px; line-height:18px; text-align:left;">
+                             Contact us about your payment options. If you signed up for autopay, no action is required by you. We will draft your
+payment on your next due date. If you have not signed up for autopay, we encourage you to sign up on the {{Secure_Borrower_Portal}}. If you mail a check please make your check payable to {{Current_Servicer}}. Include reference number {{LAI_Number}}.</td>
+                          </tr><tr>
+                                            <td height="15" style="font-size:1px; line-height:1px; mso-line-height-rule:exactly;"></td>
+                                          </tr>
+                  </tbody></table>
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0" >
+                  <tbody>
+                  
+                  <tr>
+                            <td style="font-family:Arial, Helvetica, sans-serif; font-size:11px; line-height:18px; text-align:left;">
+                             {{Mini_Miranda}}</td>
+                          </tr><tr>
+                                            <td height="15" style="font-size:1px; line-height:1px; mso-line-height-rule:exactly;"></td>
+                                          </tr>
+                  </tbody></table>                  <table width="100%" border="0" cellspacing="0" cellpadding="0" >
+                  <tbody>
+                  
+                  <tr>
+                            <td style="font-family:Arial, Helvetica, sans-serif; font-size:11px; line-height:18px; text-align:left;">
+                            {{State_Disclosure_Header}}</td>
+                          </tr><tr>
+                                            <td height="15" style="font-size:1px; line-height:1px; mso-line-height-rule:exactly;"></td>
+                                          </tr>
+                  </tbody></table>
+                  
+
+                   <table width="100%" border="0" cellspacing="0" cellpadding="0" >
+                  <tbody>
+                  
+                  <tr>
+                            <td style="font-family:Arial, Helvetica, sans-serif; font-size:10px; line-height:20px; text-align:left; border-bottom:1px solid;">
+                             </td>
+                          </tr>
+                  </tbody></table>
+                  
+                  
+                  
+                  
+                  <tr>
+                    <td width="100%" valign="top" style="text-align:left;"><table width="660" cellpadding="0" cellspacing="0" border="0" align="left" class="devicewidthinner">
+                        <tbody>
+                          <tr>
+                            <td width="100%"><table align="left" width="390" border="0" cellspacing="0" cellpadding="0" class="col-left">
+                                <tbody>
+                                  <tr>
+                                    <td valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0" align="left">
+                                        <tbody>
+                                         
+                                             <tr>
+                                            <td style="font-size:1px; line-height:1px; mso-line-height-rule:exactly;"></td>
+                                            <td height="5" style="font-size:1px; line-height:1px; mso-line-height-rule:exactly;"></td>
+                                          </tr>
+                                            <tr>
+                                            <td valign="top" width="30">&nbsp;</td>
+                                            <td valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0" align="left">
+                                                <tbody>                                      
+                                                 </tbody>
+                                              </table></td>
+                                          </tr>                          
+                                        </tbody>
+                                      </table>
+                                    
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td style="font-family:Arial, Helvetica, sans-serif; font-size:11px; line-height:18px; text-align:left; font-weight:bold;">Mail this form to:                 
+                                        </td>
+                                  </tr>
+                                    
+                                  <tr>
+                                    <td style="font-family:Arial, Helvetica, sans-serif; font-size:11px; line-height:20px; text-align:left;">{{Current_Servicer}}              
+                                        </td>
+                                  </tr> <tr>
+                                    <td style="font-family:Arial, Helvetica, sans-serif; font-size:11px; line-height:20px; text-align:left;">{{Cur_Serv_Mail_St_Add}}             
+                                        </td>
+                                  </tr><tr>
+                                    <td style="font-family:Arial, Helvetica, sans-serif; font-size:11px; line-height:20px; text-align:left;">{{Cur_Serv_Mail_Cty}}, {{Cur_Serv_Mail_St}} {{Cur_Serv_Mail_ZIP}}             
+                                        </td>
+                                  </tr>
+                                  <tr>
+                                            <td height="15" style="font-size:1px; line-height:1px; mso-line-height-rule:exactly;"></td>
+                                          </tr>
+                                  <tr>
+                                    <td style="font-family:Arial, Helvetica, sans-serif; font-size:11px; line-height:20px; text-align:left;">{{Borrower_Full_Name}}         
+                                        </td>
+                                  </tr><tr>
+                                    <td style="font-family:Arial, Helvetica, sans-serif; font-size:11px; line-height:20px; text-align:left;">{{Borrower_Street_Address}}         
+                                        </td>
+                                  </tr><tr>
+                                    <td style="font-family:Arial, Helvetica, sans-serif; font-size:11px; line-height:20px; text-align:left;">{{Borrower_City}}, {{Borrower_State}} {{Borrower_ZIP}}  
+                                        </td>
+                                  </tr>
+                                  <tr>
+                                    <td style="font-size:1px; line-height:1px; mso-line-height-rule:exactly;"></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <table class="removeMobile" width="20" cellspacing="0" cellpadding="0" border="0" align="left">
+                                <tbody>
+                                  <tr>
+                                    <td style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;" width="100%" height="15">&nbsp;</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <table width="245" cellspacing="0" cellpadding="0" border="0" align="left" class="col-right">
+                                <tbody>
+                                  <tr>
+                                    <td height="10" style="font-size:1px; line-height:1px; mso-line-height-rule:exactly;"></td>
+                                  </tr>
+                                  <tr>
+                                    <td valign="top"><table width="225" border="0" cellspacing="0" cellpadding="0" align="center" class="col-right-inner">
+                                        <tbody>
+                                         
+                                          <tr>
+
+                                          <tr>
+                                            <td valign="top">
+                                               <table width="260" border="0" cellspacing="0" cellpadding="0" align="center" class="col-right-inner">
+                                                <tbody>
+                                    <tr>
+                                       <td style="font-family:Arial, Helvetica, sans-serif;  font-size:11px; line-height:18px; text-align:left; border-bottom: 2px solid;">How do you want to respond?</td>
+                                    </tr>                                    <tr>
+                           <td height="5" style="font-size:1px; line-height:1px; mso-line-height-rule:exactly;"></td>
+                        </tr> <tr>
+                                                  <td style="font-family:Arial, Helvetica, sans-serif;  font-size:12px; line-height:18px; text-align:left; "><i>Check all that apply:</i></td>
+                                    </tr><tr>
+                                       <td style="font-family:Arial, Helvetica, sans-serif;  font-size:11px; line-height:18px; text-align:left;"><ul>
+                                         <li><b>I want to dispute this debt because I think:</b></li>
+    <ul>
+      <li>This is not by debt.</li>
+      <li>The amount is wrong.</li>
+      <li>Other (please describe on reverse or
+        attach provide additional information)</li>
+    </ul>
+  </li></li>
+  <li><b>I want you to send me the name and address
+    of the original creditor.</b></li>
+ <li><b>I enclosed this amount: $_________________</b></li>
+</ol></td>
+                                    </tr><tr>
+                                       <td style="font-family:Arial, Helvetica, sans-serif;  font-size:12px; line-height:18px; text-align:left;"><i>Make your check payable to {{Current_Servicer}}. Include
+reference number {{LAI_Number}}</i></td>
+                                    </tr>
+                                 </tbody>
+                                              </table>
+
+                                    
+                                    </td>
+                                          </tr>
+
+                                          <tr>
+                                            <td valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0" align="left">
+                                                <tbody>
+                                                  
+                                                  <tr>
+                                                    <td colspan="2" height="5" style="font-size:1px; line-height:1px; mso-line-height-rule:exactly;"></td>
+                                                  </tr>
+
+                                                </tbody>
+                                              </table></td>
+                                          </tr>
+                                          <tr>
+                                            <td height="10" style="font-size:1px; line-height:1px; mso-line-height-rule:exactly;"></td>
+                                          </tr>
+                                          <tr>
+                                            <td height="15" style="font-size:1px; line-height:1px; mso-line-height-rule:exactly;"></td>
+                                          </tr>
+                                        </tbody>
+                                      </table></td>
+                                  </tr>
+                                </tbody>
+                              </table></td>
+                          </tr>
+                         <table width="100%" border="0" cellspacing="0" cellpadding="0" >
+                  <tbody>
+                  
+                  <tr>
+                            <td style="font-family:Arial, Helvetica, sans-serif; font-size:11px; line-height:18px; text-align:left;">
+                           *{{Payoff_Disclosure}}</td>
+                          </tr><tr><td height="15" style="font-size:1px; line-height:1px; mso-line-height-rule:exactly;"></td>
+                                          </tr><tr>
+                            <td style="font-family:Arial, Helvetica, sans-serif; font-size:11px; line-height:18px; text-align:left;">
+                              **{{Bankruptcy_Disclosure}}</td>
+                          </tr><tr>
+                                            <td height="15" style="font-size:1px; line-height:1px; mso-line-height-rule:exactly;"></td>
+                                          </tr><tr>
+                            <td style="font-family:Arial, Helvetica, sans-serif; font-size:11px; line-height:18px; text-align:center;">
+                        {{State_Disclosure_Header}}</td>
+                          </tr><tr>
+                                            <td height="15" style="font-size:1px; line-height:1px; mso-line-height-rule:exactly;"></td>
+                                          </tr><tr>
+                            <td style="font-family:Arial, Helvetica, sans-serif; font-size:11px; line-height:18px; text-align:left;">
+                            {{State_Disclosure}}</td>
+                          </tr><tr>
+                                            <td height="15" style="font-size:1px; line-height:1px; mso-line-height-rule:exactly;"></td>
+                                          </tr><tr>
+                            <td style="font-family:Arial, Helvetica, sans-serif; font-size:11px; line-height:18px; text-align:left;">
+                              {{NMLS_ID}}</td>
+                          </tr><tr>
+                                            <td height="15" style="font-size:1px; line-height:1px; mso-line-height-rule:exactly;"></td>
+                                          </tr>
+                    <tr>
+                            <td style="font-family:Arial, Helvetica, sans-serif; font-size:11px; line-height:18px; text-align:left;">
+                              <b>Privacy Notice:</b> Federal law requires us to tell you how we collect, share, and protect your personal information. You may review our policy and practices with respect to your personal information via the attached privacy notice or at {{Current_Servicer_Privacy_Notice_URL}}. In order to view, navigate and print PDF documents, you'll need Adobe Acrobat Reader software. If you don't already have it, you can download it free at https://get.adobe.com/reader. Alternatively, we will mail you a free copy of the privacy notice if you call us at {{Cur_Serv_Phone_Nbr}}.</td>
+                          </tr><tr>
+                                            <td height="15" style="font-size:1px; line-height:1px; mso-line-height-rule:exactly;"></td>
+                                          </tr><tr>
+                            <td style="font-family:Arial, Helvetica, sans-serif; font-size:11px; line-height:18px; text-align:center;">
+                            Important Contact Information</td>
+                          </tr><tr>
+                                            <td height="15" style="font-size:1px; line-height:1px; mso-line-height-rule:exactly;"></td>
+                                          </tr>
+                  </tbody></table>
+                  
+                  
+                  
+                  
+                 <table align="center" border="0" cellspacing="0" cellpadding="0" class="devicewidth" style="margin:auto; border:1px solid;">
+                  <tbody>
+                     <tr>
+                        <td valign="top" style=" border-right:1px solid;border-bottom:1px solid; padding:5px 5px 5px 5px; font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:normal; line-height:20px; text-align:left;">Company Name:</td>
+                        <td valign="top" style="border-bottom:1px solid; padding:5px 5px 5px 5px; font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:normal; line-height:20px; text-align:left;">{{Current_Servicer}}</td>
+
+                     </tr>
+                     <tr>
+                        <td valign="top" style="border-right:1px solid;border-bottom:1px solid;padding:5px 5px 5px 5px; font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:normal; line-height:20px; text-align:left;">Send Payments, Disputes, Inquiries to:</td>
+                        <td valign="top" style="border-bottom:1px solid;padding:5px 5px 5px 5px; font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:normal; line-height:20px; text-align:left;">{{Current_Servicer}} {{Cur_Serv_Mail_St_Add}}<br>{{Cur_Serv_Mail_Cty}}, {{Cur_Serv_Mail_St}} {{Cur_Serv_Mail_ZIP}}</td>
+              
+                     </tr>
+                     <tr>
+                        <td valign="top" style="border-right:1px solid;border-bottom:1px solid;padding:5px 5px 5px 5px; font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:normal; line-height:20px; text-align:left;">Physical Address
+</td>
+                        <td valign="top" style="border-bottom:1px solid;padding:5px 5px 5px 5px; font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:normal; line-height:20px; text-align:left;">{{Cur_Serv_Phys_St_Add}}<br>{{Cur_Serv_Phys_Cty}}, {{Cur_Serv_Phys_St}}{{Cur_Serv_Phys_ZIP}}<br> Phone:&nbsp;{{Cur_Serv_Phone_Nbr}}<br>Fax:&nbsp;{{Cur_Serv_Fax_Nbr}}</td>
+              
+                     </tr>
+       <tr>
+                        <td valign="top" style="border-right:1px solid;border-bottom:1px solid;padding:5px 5px 5px 5px; font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:normal; line-height:20px; text-align:left;">Email General inquiries:</td>
+                        <td valign="top" style="border-bottom:1px solid;padding:5px 5px 5px 5px; font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:normal; line-height:20px; text-align:left;">{{Cur_Serv_Main_Email_Add}}</td>
+              
+                     </tr>
+             <tr>
+                        <td valign="top" style="border-right:1px solid;padding:5px 5px 5px 5px;font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:normal; line-height:20px; text-align:left;">Email Disputes:</td>
+                        <td valign="top" style="padding:5px 5px 5px 5px; font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:normal; line-height:20px; text-align:left;">{{Cur_Serv_Disp_Email_Add}}</td>
+              
+                     </tr>
+
+                  </tbody>
+               </table> <br><br>
+                   <table width="100%" border="0" cellspacing="0" cellpadding="0" >
+                  <tbody>
+                  
+                  <tr>
+                            <td style="font-family:Arial, Helvetica, sans-serif; font-size:10px; line-height:20px; text-align:left; border-bottom:1px solid;">
+                             </td>
+                          </tr>
+                  </tbody></table><br>
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0" >
+                  <tbody>
+                  
+                  <tr>
+                            <td style="font-family:Arial, Helvetica, sans-serif; font-size:11px; line-height:18px; text-align:center;">
+                             {{Cur_Serv_Mail_St_Add}} {{Cur_Serv_Mail_Cty}} {{Cur_Serv_Mail_St}} {{Cur_Serv_Mail_ZIP}}<br>
+                    {{Cur_Serv_Main_Email_Add}}&nbsp;&nbsp;&nbsp;&nbsp;Phone: {{Cur_Serv_Phone_Nbr}}&nbsp;&nbsp;&nbsp;&nbsp;Fax: {{Cur_Serv_Fax_Nbr}}<br>
+     {{Cur_Serv_Work_Week}}, {{Week_Start_Time}} AM to {{Week_End_Time}} PM CT<br>
+                     {{Cur_Serv_Work_Day}}, {{Day_Start_Time}} AM to {{Day_End_Time}} PM CT<br> </td>
+                    </tr></tbody></table>
+ 
+                  
+                  
+                  
+                  
+                  
+                                  <tr>
+                                    <td height="20" style="font-size:1px; line-height:1px; mso-line-height-rule:exactly;"></td>
+                                  </tr>
+                                 
+                        </tbody>
+                      </table></td>
+                  </tr>
+                  <tr>
+                    <td height="15" style="font-size:1px; line-height:1px; mso-line-height-rule:exactly;">&nbsp;</td>
+                  </tr>
+      <tr>
+                                    <td height="15" style="font-size:1px; line-height:1px; mso-line-height-rule:exactly;"></td>
+                                  </tr>
+          <tr>
+                                    <td style="border-top:1px solid #000;text-align: left;">&nbsp; </td>
+                                  </tr>
+          <tr>
+                                    <td height="5" style="font-size:1px; line-height:1px; mso-line-height-rule:exactly;"></td>
+                                  </tr>
+          
+          <tr>
+                    <td height="15" style="font-size:1px; line-height:1px; mso-line-height-rule:exactly;">&nbsp;</td>
+                  </tr>
+                </tbody>
+              </table></td>
+          </tr>
+        </tbody>
+      </table></td>
+  </tr>

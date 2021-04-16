@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+<title></title>
+<style>
+body {
+        width: 8.5in;
+        height: 10.5in;
+        margin: 0;
+
+
+        padding: 0;
+        font:normal 13px/20px Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+        position: absolute;
+        top: 1.00in;
+}
+.page {
+        page-break-after: always;
+}
+p {
+
+font:normal 15px/20px Arial, Helvetica, sans-serif;
+margin-left: 0.1in;
+margin-right: 0.67in;
+
+}
+table {
+font:normal 15px/20px Arial, Helvetica, sans-serif;
+margin-left: 0.2in;
+margin-right: 0.67in;
+}
+
+.page-content {
+        position: absolute;
+        width: 7in;
+        height: 10in;
+        margin-left: 0.67in;
+        margin-right: 0.67in;
+        top: 0.1875in;
+}
+.brand {
+        position: absolute;
+        left: 0;
+}
+.brand span {
+        display: inline-block;
+        line-height:18px;
+}
+
+.text-link {
+        color:#0da98a;
+        text-decoration:none;
+}
+.text-link:hover {
+        text-decoration:underline;
+}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="page-content">
+    <div class="brand"><img src="https://www.personifyfinancial.com/img/personifymailer_logo.png" alt="Personify Financial" width="160" /> </div>
+    <div class="wrapper">
+
+
+        <p>{{CURDATE}}</p>
+        <p style="line-height:25px">{{FULLNAME}}<br>{{ADRESS1}}<br>{{ADDRESS2}}</p>
+                                   
+
+      <p style="text-align: center;"><b>Important: Your Application with Personify Financial.</b></p>
+      <p>We are in receipt of your loan request, either because you applied online directly with Applied Data Finance, d/b/a Personify Financial or with one of our affiliated partners.</p>
+
+      <p>After carefully reviewing your application, we are sorry to advise you that we cannot grant a loan to you. If you would like a statement of specific reasons why your application was denied, please contact us at the address shown below within 60 days of the date of this notice. We will provide you with the statement of reasons within 30 days after receiving your request.</p>
+
+      <p style="padding-left: 0.7in">Personify Financial<br />
+        PO Box 208417<br />
+        Dallas, TX 75320-8417<br />
+        <a href="tel:(888) 578-9546" style="color:#00ac9f; line-height:25px; text-decoration:underline;">(888) 578-9546</a> <br />
+        <a href="mailto:contact@personifyfinancial.com" style="text-decoration:underline; color: #00ac9f;">contact@personifyfinancial.com</a>  
+                    
+                  </p>
+
+     <p>If we obtained information from a consumer reporting agency as part of our consideration of your application, its name, address and telephone number is shown below. The reporting agency played no part in our decision and is unable to supply specific reasons why we have denied credit to you. You have a right under the Fair Credit Reporting Act to know the information contained in your credit file at the consumer reporting agency. You have a right to a free copy of your report from the reporting agency, if you request it no later than 60 days after you receive this notice. In addition, if you find that any information contained in the report you received is inaccurate or incomplete, you have the right to dispute the matter with the reporting agency. You can find out about the information contained in your file (if one was used) by contacting:</p>
+
+     <p style="padding-left: 0.7in"> TransUnion Consumer Relations<br />
+                                <a href="http://www.transunion.com/myoptions" style="color:#00ac9f; text-decoration:underline;">www.transunion.com/myoptions</a><br />
+                                2 Baldwin Place<br />
+                                P.O. Box 1000<br />
+                                Chester, PA 19022<br />
+                                <a href="tel:(800) 888-4213" style="color: #00ac9f; text-decoration: underline;">(800) 888-4213</a></p>
+
+	<br><br><br><br><br>
+      <p>We also obtained your Credit Vision score from this consumer reporting agency and used it in making our credit decision. Your credit score is a number that reflects the information in your consumer report. Your credit score can change, depending on how the information in your consumer report changes.</p>
+      
+      <p>Your Credit Vision score: {{cvscore}}<br>
+      Date: {{Date}}</p>
+      
+      <p>Credit Vision Scores Range from a low of 300 to a high of 850</p>
+      <p>Key factors that adversely affected your credit score:</p>
+      <p style="padding-left: 0.7in">1) {{Keyfactor1}}<br />
+      2) {{Keyfactor2}}<br />
+      3) {{Keyfactor3}}<br />
+      4) {{Keyfactor4}}<br />
+      5) {{Keyfactor5}}<br /></p>
+      
+      
+      <p>If you have any questions regarding your credit score, you should contact TransUnion Consumer Relations at 2 Baldwin Place P.O. Box 1000 Chester, PA 19022. Their toll free number is <a href="tel:(800) 888-4213" style="color: #00ac9f; text-decoration: underline;">(800) 888-4213</a>.</p>
+      
+      
+      <p>Sincerely,<br><b>Personify Financial</b></p>
+	  <p style="text-align: left;font-size:10px">&nbsp<br>
+	  Notice: The federal Equal Credit Opportunity Act prohibits creditors from discriminating against credit applicants on the basis of race, color, religion, national origin, sex, marital status, age (provided the applicant has the capacity to enter into a binding contract); because all or part of the applicant's income derives from any public assistance program; or because the applicant has in good faith exercised any right under the Consumer Credit Protection Act. The federal agency that administers compliance with this law concerning this creditor is the Federal Trade Commission, Equal Credit Opportunity, Washington, DC 20580.</p>
+<!--    <p style="line-height:100px;>&nbsp;</p>-->
+          <p style="border-top:1px solid #000;text-align: left;font-size:10px">&nbsp<br>
+          CONFIDENTIALITY NOTICE: This mail message and any attached files contain information intended for the exclusive use of the individual or entity to whom it is addressed and may contain information that is proprietary, privileged, confidential and/or exempt from disclosure under applicable law. If you are not the intended recipient, you are hereby notified that any viewing, copying, disclosure or distribution of this information may be subject to legal restriction or sanction. Please notify the sender, by electronic mail or telephone, of any unintended recipients and destroy the original message without making any copies.</p>
+          
+    </div>
+  </div>
+</div>
+</body>
+</html>
